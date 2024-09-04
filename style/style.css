@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@300&family=Pacifico&display=swap');
+html{
+    font-family: Jost;
+    background-color: #bde7aa;
+}
+main{
+    margin: 10px;
+}
+body {
+    margin: 0;
+}
+nav{
+    padding: 10px;
+    width: 101%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: 	rgb(66, 195, 191);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 100px;
+    left: -5px;
+    margin-bottom: 20px;
+    z-index: 100;
+    
+}
+nav a{
+    font-size: 20px;
+}
+#About_us {
+    margin-top: 55px;
+}
+#burger, label[for="burger"]{
+    visibility: hidden;
+    user-select: none;
+    transform: rotate(0);
+    transition: transform 0.5s;
+}
+
+section[title="Регистрация"]{
+    border: 3px solid rgb(76, 151, 255);
+    background-color: rgb(178, 210, 255);
+    padding: 10px;
+    width: fit-content;
+    margin: 2vw auto;
+
+}
+section[title="Регистрация"] button:focus{
+    text-decoration: underline;
+}
+section[title="Отзыв"] form[title="text"]{
+    border: 3px solid rgb(76, 151, 255);
+    background-color: rgb(178, 210, 255);
+    padding: 10px;
+    width: fit-content;
+    margin: 2em 0;
+}
+section[title="Отзыв"]{
+    display: inline-block;
+    vertical-align: top
+}
+textarea::placeholder{
+    color: #00007a;
+}
+legend {
+    background-color: black;
+    color: #fff;
+    padding: 3px 6px;
+}
+input {
+    margin: 0.4rem;
+}
+section[title="Карта"]
+{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+aside {
+    padding-left: 30px;
+    float: right;
+    box-shadow: inset 5px 0 #29627e;
+    color: #29627e;
+  }
+
+a {
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
+}
+.links:visited{
+    color: rgb(255, 0, 191);
+}
+.links:active{
+    color: rgb(3, 197, 155);
+}
+.articles_grid .article-block {
+    display: block;
+    height: 85%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    line-height: 24px;
+    color: #8A8A8A;
+    border: 0 none;
+    padding-bottom: 60px;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.acticle_col {
+    flex: 0 1 33.3333%;
+    width: 33.3333%;
+    padding: 0 12px 18px;
+}
+.articles_grid {
+    display: flex;
+    justify-content: space-around;
+}
+.article-picture {
+    position: relative;
+    margin: 0 0 22px;
+    border-radius: 10px;
+}
+.article-picture img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+.article-item-content .article-title {
+    color: #2E2E2E;
+    font-size: 21px;
+    line-height: 23px;
+    margin: 0 0 8px;
+}
+.article-title, .article-short-content {
+    padding: 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+    margin: 10px;
+  }
+  
+  .footer-links a:hover {
+    color: #ff9900;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icon img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+@media screen and (max-width: 750px) {
+    label[for="burger"] {
+        visibility: visible;
+        position: fixed;
+        left: 5px;
+        top: 2px;
+        z-index: 5;
+    }
+    label[for="burger"]::before{
+        content: '☰';
+        font-size: 30px;
+    }
+    nav{
+        border-radius: 0;
+        background-color:rgb(66, 195, 191);
+        border-color: #04007d;
+        width: 200px;
+        height: 600px;
+        position: fixed;
+        top: 40px;
+        left: -200px;
+        z-index: 5;
+        transition: all 0.5s;
+        flex-direction: column;
+    }
+    #burger:checked + label{
+        transform: rotate(0.25turn);
+        transition: all 0.5s;
+    }
+    #burger:checked + label + br + nav{
+        left: 0;
+    }
+    .footer-logo{
+        font-size: 10px;
+    }
+    .footer-social{
+        flex-direction: column;
+    }}

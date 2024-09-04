@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Secret</title>
+    <link rel="icon"  href="img/parfum-favicon.png" type="image/png">
+    <link rel="stylesheet" href="style/style5.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger">
+        <label for="burger"></label><br>
+        <nav>
+            <a href="index.html"><img src="img/main_pic.png" width="60" height="60"></a>
+            <a href="index2.html">Отзыв</a>
+            <a href="index4.html">Каталог</a>
+            <a href="index5.html">Конструктор</a>
+            <a href="index3.html">Статьи</a>
+        </nav>
+    </header>
+    <main>
+        <div class="perfume-container">
+            <div id="perfume-bottle">
+                <img src="img/construct.png" width="400" height="400">
+                <div id="liquid-level"></div>
+            </div>
+            <div id="ingredients-list">
+                <select id="ingredient-select">
+                    <option value="Жасмин">Жасмин</option>
+                    <option value="Бергамот">Бергамот</option>
+                    <option value="Табак">Табак</option>
+                    <option value="Ваниль">Ваниль</option>
+                    <option value="Черный перец">Черный перец</option>
+                    <!-- Добавьте другие ингредиенты по желанию -->
+                </select><br>
+                <button onclick="addIngredient()">Добавить</button><br>
+                <button onclick="removeIngredient()">Удалить</button>
+            </div>
+            <div id="congratulations">Добавь 3 элемента, чтобы изготовить парфюм!</div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Наши контакты:<h3>+7 (888) 888-88-88</h3><h3>mail@mail.ru</h3></div>
+            <div class="footer-links">
+                <a href="index.html">Главное</a>
+                <a href="index2.html">Отзыв</a>
+                <a href="index4.html">Каталог</a>
+                <a href="index5.html">Конструктор</a>
+                <a href="index3.html">Статьи</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">
+                    <img src="img/vk.svg" alt="VK">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/telegram.svg" alt="Telegram">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/youtube.svg" alt="YouTube">
+                </a>
+            </div>
+        </div>
+      </footer>
+    <script src="js/script5.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Secret</title>
+    <link rel="icon"  href="img/parfum-favicon.png" type="image/png">
+    <link rel="stylesheet" href="style/style4.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger">
+        <label for="burger"></label><br>
+        <nav>
+            <a href="index.html"><img src="img/main_pic.png" width="60" height="60"></a>
+            <a href="index2.html">Отзыв</a>
+            <a href="index4.html">Каталог</a>
+            <a href="index5.html">Конструктор</a>
+            <a href="index3.html">Статьи</a>
+        </nav>
+    </header>
+    <main>
+        <div class="cart">
+            <h2>Корзина</h2>
+            <ul id="cartItems">
+            </ul>
+            <p>Общая стоимость:</p>
+            <button onclick="clearCart()">Очистить корзину</button>
+        </div>
+        <div class="container">
+            <div class="product" id="product1">
+                <img src="img/nasomattobaraondo.jpg" alt="Perfume 1">
+                <h2>Baraonda Nasomatto</h2>
+                <p>Древесные аккорды</p>
+                <p>Цена: 15700₽</p>
+                <button onclick="addToCart('Baraonda Nasomatto', 15700)">Добавить в корзину</button>
+            </div>
+    
+            <div class="product" id="product2">
+                <img src="img/nasomattoamber.jpg" alt="Perfume 2">
+                <h2>Black Afgano Nasomatto</h2>
+                <p>Янтарные аккорды</p>
+                <p>Цена: 12320₽</p>
+                <button onclick="addToCart('Black Afgano Nasomatto', 12320)">Добавить в корзину</button>
+            </div>
+    
+            <div class="product" id="product3">
+                <img src="img/nasomattoduro.jpg" alt="Perfume 3">
+                <h2>Duro Nasomatto</h2>
+                <p>Древесные аккорды</p>
+                <p>Цена: 11912₽</p>
+                <button onclick="addToCart('Duro Nasomatto', 11912)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product4">
+                <img src="img/nasomattonarco.jpg" alt="Perfume 4">
+                <h2>Narcotic Venus Nasomatto</h2>
+                <p>Оттенок белых цветов</p>
+                <p>Цена: 11900₽</p>
+                <button onclick="addToCart('Narcotic Venus Nasomatto', 11900)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product5">
+                <img src="img/nasomattofantomas.jpg" alt="Perfume 5">
+                <h2>Fantomas Nasomatto</h2>
+                <p>Табачные аккорды</p>
+                <p>Цена: 10578₽</p>
+                <button onclick="addToCart('Fantomas Nasomatto', 10578)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product6">
+                <img src="img/jusbox14h.jpg" alt="Perfume 6">
+                <h2>14Hour Dream Jusbox</h2>
+                <p>Тёплые и пряные аккорды</p>
+                <p>Цена: 9999₽</p>
+                <button onclick="addToCart('14Hour Dream Jusbox', 9999)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product7">
+                <img src="img/jusboxfruit.jpg" alt="Perfume 7">
+                <h2>Black Powder Jusbox</h2>
+                <p>Фруктовые аккорды</p>
+                <p>Цена: 8499₽</p>
+                <button onclick="addToCart('Black Powder Jusbox', 8499)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product8">
+                <img src="img/jusboxcitrus.jpg" alt="Perfume 8">
+                <h2>Good Morning Jusbox</h2>
+                <p>Цитрусовые аккорды</p>
+                <p>Цена: 11600₽</p>
+                <button onclick="addToCart('Good Morning Jusbox', 11600)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product9">
+                <img src="img/jusboxnight.jpg" alt="Perfume 9">
+                <h2>Night Flow Jusbox</h2>
+                <p>Оттенки кожи</p>
+                <p>Цена: 14800₽</p>
+                <button onclick="addToCart('Night Flow Jusbox', 14800)">Добавить в корзину</button>
+            </div>
+            <div class="product" id="product10">
+                <img src="img/jusboxcarioca.jpg" alt="Perfume 10">
+                <h2>Carioca Heart Jusbox</h2>
+                <p>Фруктовые аккорды</p>
+                <p>Цена: 13599₽</p>
+                <button>Добавить в корзину</button>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Наши контакты:<h3>+7 (888) 888-88-88</h3><h3>mail@mail.ru</h3></div>
+            <div class="footer-links">
+                <a href="index.html">Главное</a>
+                <a href="index2.html">Отзыв</a>
+                <a href="index4.html">Каталог</a>
+                <a href="index5.html">Конструктор</a>
+                <a href="index3.html">Статьи</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">
+                    <img src="img/vk.svg" alt="VK">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/telegram.svg" alt="Telegram">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/youtube.svg" alt="YouTube">
+                </a>
+            </div>
+        </div>
+      </footer>
+    <script src="js/script4.js"></script>
+</body>
+</html>

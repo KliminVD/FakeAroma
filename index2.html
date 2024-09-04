@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Secret</title>
+    <link rel="icon"  href="img/parfum-favicon.png" type="image/png">
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger">
+        <label for="burger"></label><br>
+        <nav>
+            <a href="index.html"><img src="img/main_pic.png" width="60" height="60"></a>
+            <a href="index2.html">Отзыв</a>
+            <a href="index4.html">Каталог</a>
+            <a href="index5.html">Конструктор</a>
+            <a href="index3.html">Статьи</a>
+        </nav>
+    </header>
+    <main>
+        <div class="report">
+            <section title="Отзыв">
+                <h2 id="Review" class="Titles">Оставьте отзыв о нас</h2>
+                <form>
+                    <fieldset class="Titles">
+                    <legend>Как вы оцениваете оформление сайта?</legend>
+                
+                    <input type="radio" id="good" name="beauty" value="Красиво" />
+                    <label for="good">Красиво</label><br />
+                
+                    <input type="radio" id="norm" name="beauty" value="Неплохо" />
+                    <label for="norm">Неплохо</label><br />
+                
+                    <input type="radio" id="bad" name="beauty" value="Ужасно" />
+                    <label for="bad">Ужасно</label>
+                    </fieldset>
+                </form>
+                <form title="text">
+                    <label for="review">Ваше мнение о сайте</label><br>
+                    <textarea required minlength="10" maxlength="300" id="review" name="review" rows="15" cols="40" placeholder="Расскажите о ваших предпочтениях в стилистике сайта, о том, что понравилось и не понравилось"></textarea><br>
+                    <button type="submit">Отправить</button>
+                </form>
+                
+            </section>
+            <section title="Карта">
+                <h2 class="Titles">Наше местоположение</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36001.54441898018!2d37.40408221479402!3d55.66992160307568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695827328061!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+        </div>
+        <p>Для того, чтобы оставить отзыв, зарегистрируйтесь на нашем сайте.</p>
+            <section title="Регистрация">
+                <h2 id="Registr" class="Titles">Регистрация</h2>
+                <p>Для регистрации на сайте заполните следующую форму</p>
+                <form>
+                    <p>
+                        <label for="name">Введите ваше имя</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label for="tel">Введите номер телефона</label>
+                        <input type="tel" name="tel" id="tel" required>
+                    </p>
+                    <p>
+                        <label for="emaillogin">Введите логин</label>
+                        <input type="email" name="emaillogin" id="emaillogin" required>
+                    </p>
+                    <p>
+                        <label for="password">Введите пароль</label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+                    <p>
+                        <label for="password1">Введите пароль повторно</label>
+                        <input type="password" name="password1" id="password1" required>
+                    </p>
+                    <button type="submit">Зарегистрироваться</button>
+                    <p>
+                        <label for="reject">Отправлять уведомления на почту</label>
+                        <input type="checkbox" name="reject" id="reject" checked>
+                    </p>
+                </form>
+            </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Наши контакты:<h3>+7 (888) 888-88-88</h3><h3>mail@mail.ru</h3></div>
+            <div class="footer-links">
+                <a href="index.html">Главное</a>
+                <a href="index2.html">Отзыв</a>
+                <a href="index4.html">Каталог</a>
+                <a href="index5.html">Конструктор</a>
+                <a href="index3.html">Статьи</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">
+                    <img src="img/vk.svg" alt="VK">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/telegram.svg" alt="Telegram">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/youtube.svg" alt="YouTube">
+                </a>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
